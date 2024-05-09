@@ -29,8 +29,8 @@ export const Hero = () => {
       </div>
       <div className="flex h-96 w-full rounded-xl border-4 border-bgDarkBlue bg-accentLime px-24 py-20">
         <h1 className="font-bowlby text-7xl">THE BURGER ABOVE ALL BURGERS</h1>
-        <div className="flex w-full flex-col gap-8">
-          <p className="font-inter text-lg font-semibold">
+        <div className="flex w-full flex-col justify-between gap-8">
+          <p className="font-inter text-2xl font-semibold">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
             quisquam velit doloribus nostrum alias sunt!
           </p>
