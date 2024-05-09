@@ -1,4 +1,4 @@
-import { BurgerImg } from "./BurgerImgProps";
+import { BurgerImg } from "./BurgerImg";
 
 export const Hero = () => {
   return (
