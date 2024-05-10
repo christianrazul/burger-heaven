@@ -30,6 +30,23 @@ export const Hero = () => {
     },
   };
 
+  const buttonVariants = {
+    rest: {
+      scale: 1,
+      boxShadow: "0.5rem 0.5rem 0rem rgba(0, 0, 0, 1)", // Initial shadow as per your Tailwind setup
+      backgroundColor: "#E9E3DC", // Assuming textBeige is something like #f5f5dc
+    },
+    hover: {
+      scale: 1,
+      boxShadow: "0rem 0rem 0rem rgba(0, 0, 0, 0)", // Shadow retracts
+      backgroundColor: "#B3A0CD", // Change to accentPurple
+      transition: {
+        duration: 0.2,
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
     <div className="flex w-full flex-col items-center">
       {/* <h1 className="w-[1158px] text-center font-bowlby text-8xl leading-[88.9%] text-textBeige">
@@ -95,12 +112,14 @@ export const Hero = () => {
             Welcome to Burger Heaven, where each burger is a masterpiece of
             flavor. Tempted by a taste of paradise?
           </p>
-          <button
-            className="h-16 w-44 shrink-0 border-4 border-bgDarkBlue bg-textBeige font-bowlby text-lg drop-shadow-boxy"
-            // style={{ boxShadow: "0.5rem 0.5rem black" }}
+          <motion.button
+            className="h-16 w-44 shrink-0 border-4 border-bgDarkBlue bg-textBeige font-bowlby text-lg"
+            variants={buttonVariants}
+            initial="rest"
+            whileHover="hover"
           >
             ABOUT US
-          </button>
+          </motion.button>
         </div>
       </div>
     </div>
