@@ -6,8 +6,20 @@ const feedbacks = [
 ];
 export const Feedback = () => {
   const duplicatedFeedbacks = [...feedbacks, ...feedbacks];
-
   const [windowWidth, setWindowWidth] = useState(0);
+
+  const menuVariants = {
+    hidden: { opacity: 0, y: 50 }, // Starting state before the component comes into view
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 1.5,
+      },
+    }, // State when the component is in view
+  };
 
   useEffect(() => {
     // Set the window width after the component mounts
@@ -39,12 +51,16 @@ export const Feedback = () => {
           </div>
         ))}
       </motion.div>
-      <div
+      <motion.div
         className="flex h-[503px] items-end rounded-3xl border-4 border-textBeige bg-cover bg-center p-4"
         style={{
           backgroundImage: "url('./src/assets/people-eating.webp')",
         }}
-      ></div>
+        variants={menuVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      ></motion.div>
     </section>
   );
 };
