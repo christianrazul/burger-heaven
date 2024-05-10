@@ -23,7 +23,8 @@ export const Feedback = () => {
           transition: {
             x: {
               repeat: Infinity,
-              repeatType: "loop",
+              repeatType: "reverse",
+              repeatDelay: 0,
               duration: 10,
               ease: "linear",
             },
@@ -33,13 +34,10 @@ export const Feedback = () => {
         {duplicatedFeedbacks.map((text, index) => (
           <div className="flex" key={index}>
             <motion.h1 className="whitespace-nowrap text-8xl text-accentLime">
-              “ {text.text} “
+              “ {text.text} “{" "}
             </motion.h1>
           </div>
         ))}
-        {/* <motion.h1 className="whitespace-nowrap text-8xl text-accentLime">
-          “ THE BEST BURGER I'VE EVER HAD “
-        </motion.h1> */}
       </motion.div>
       <div
         className="flex h-[503px] items-end rounded-3xl border-4 border-textBeige bg-cover bg-center p-4"
