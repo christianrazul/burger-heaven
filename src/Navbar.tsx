@@ -1,14 +1,16 @@
 export const Navbar = () => {
   return (
-    <nav className='flex justify-between w-full items-center'>
+    <nav className="mb-8 flex w-full items-center justify-between">
       <div>
-        <h1 className='text-textBeige font-bowlby text-3xl'>BURGER HEAVEN</h1>
+        <h1 className="font-bowlby text-3xl text-textBeige">BURGER HEAVEN</h1>
       </div>
-      <ul className='flex gap-8 text-textBeige font-bowlby items-center'>
+      <ul className="flex items-center gap-8 font-bowlby text-textBeige">
         <li>ABOUT</li>
         <li>MENU</li>
         <li>
-          <button className='bg-accentPurple h-12 w-48 text-black'>ORDER ONLINE</button>
+          <button className="h-12 w-48 bg-accentPurple text-black">
+            ORDER ONLINE
+          </button>
         </li>
       </ul>
     </nav>
