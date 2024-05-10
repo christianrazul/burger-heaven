@@ -31,8 +31,8 @@ export const Hero = () => {
         <h1 className="font-bowlby text-7xl">THE BURGER ABOVE ALL BURGERS</h1>
         <div className="flex w-full flex-col justify-between gap-8">
           <p className="font-inter text-2xl font-semibold">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-            quisquam velit doloribus nostrum alias sunt!
+            Welcome to Burger Heaven, where each burger is a masterpiece of
+            flavor. Tempted by a taste of paradise?
           </p>
           <button
             className="h-16 w-44 shrink-0 border-4 border-bgDarkBlue bg-textBeige font-bowlby text-lg drop-shadow-boxy"
