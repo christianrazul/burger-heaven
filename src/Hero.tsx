@@ -2,8 +2,8 @@ import { BurgerImg } from "./BurgerImg";
 
 export const Hero = () => {
   return (
-    <div className="flex w-full flex-col gap-4">
-      <h1 className="text-center font-bowlby text-8xl leading-[88.9%] text-textBeige">
+    <div className="flex w-full flex-col items-center gap-4">
+      <h1 className="w-[1158px] text-center font-bowlby text-8xl leading-[88.9%] text-textBeige">
         NEW YORK'S FAVORITE ORGANIC HAMBURGER JOINT
       </h1>
       <div className="relative flex h-[478px] w-full items-center justify-center">
@@ -35,7 +35,7 @@ export const Hero = () => {
             quisquam velit doloribus nostrum alias sunt!
           </p>
           <button
-            className="drop-shadow-boxy h-16 w-44 shrink-0 border-4 border-bgDarkBlue bg-textBeige font-bowlby text-lg"
+            className="h-16 w-44 shrink-0 border-4 border-bgDarkBlue bg-textBeige font-bowlby text-lg drop-shadow-boxy"
             // style={{ boxShadow: "0.5rem 0.5rem black" }}
           >
             ABOUT US
