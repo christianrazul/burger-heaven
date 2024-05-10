@@ -2,13 +2,13 @@ import { BurgerImg } from "./BurgerImg";
 
 export const Hero = () => {
   return (
-    <div className="flex w-full flex-col items-center gap-4">
+    <div className="flex w-full flex-col items-center">
       <h1 className="w-[1158px] text-center font-bowlby text-8xl leading-[88.9%] text-textBeige">
         NEW YORK'S FAVORITE ORGANIC HAMBURGER JOINT
       </h1>
       <div className="relative flex h-[478px] w-full items-center justify-center">
         <img src="./src/assets/left-squiggly.svg" className="absolute left-0" />
-        <div className="relative h-full w-4/5">
+        <div className="relative -top-6 h-full w-4/5">
           <BurgerImg
             size={"sm"}
             className="absolute left-4 top-1/2 z-10 -translate-y-1/2 transform"
