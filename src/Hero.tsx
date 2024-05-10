@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { BurgerImg } from "./BurgerImg";
 
 export const Hero = () => {
-  const textAnimation = {
+  const textVariants = {
     hidden: { y: 30, opacity: 0 },
     visible: (index: number) => ({
       y: 0,
@@ -32,9 +32,18 @@ export const Hero = () => {
 
   const buttonVariants = {
     rest: {
-      scale: 1,
+      opacity: 0,
+      scale: 0,
       boxShadow: "0.5rem 0.5rem 0rem rgba(0, 0, 0, 1)", // Initial shadow as per your Tailwind setup
       backgroundColor: "#E9E3DC", // Assuming textBeige is something like #f5f5dc
+    },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.3,
+        ease: "easeInOut",
+      },
     },
     hover: {
       scale: 1,
@@ -49,12 +58,9 @@ export const Hero = () => {
 
   return (
     <div className="flex w-full flex-col items-center">
-      {/* <h1 className="w-[1158px] text-center font-bowlby text-8xl leading-[88.9%] text-textBeige">
-        NEW YORK'S FAVORITE ORGANIC HAMBURGER JOINT
-      </h1> */}
       <motion.h1
         className="font-bowlby text-8xl leading-[88.9%] text-textBeige"
-        variants={textAnimation}
+        variants={textVariants}
         initial="hidden"
         animate="visible"
         custom={0}
@@ -63,7 +69,7 @@ export const Hero = () => {
       </motion.h1>
       <motion.h1
         className="font-bowlby text-8xl leading-[88.9%] text-textBeige"
-        variants={textAnimation}
+        variants={textVariants}
         initial="hidden"
         animate="visible"
         custom={1}
@@ -72,7 +78,7 @@ export const Hero = () => {
       </motion.h1>
       <motion.h1
         className="font-bowlby text-8xl leading-[88.9%] text-textBeige"
-        variants={textAnimation}
+        variants={textVariants}
         initial="hidden"
         animate="visible"
         custom={2}
@@ -106,16 +112,29 @@ export const Hero = () => {
         />
       </motion.div>
       <div className="flex h-96 w-full rounded-xl border-4 border-bgDarkBlue bg-accentLime px-24 py-20">
-        <h1 className="font-bowlby text-7xl">THE BURGER ABOVE ALL BURGERS</h1>
-        <div className="flex w-full flex-col justify-between gap-8">
-          <p className="font-inter text-2xl font-semibold">
+        <motion.h1
+          className="font-bowlby text-7xl"
+          variants={textVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          THE BURGER ABOVE ALL BURGERS
+        </motion.h1>
+        <div className="flex w-full flex-col justify-between gap-6">
+          <motion.p
+            className="font-inter text-2xl font-semibold"
+            variants={textVariants}
+            initial="hidden"
+            animate="visible"
+          >
             Welcome to Burger Heaven, where each burger is a masterpiece of
             flavor. Tempted by a taste of paradise?
-          </p>
+          </motion.p>
           <motion.button
             className="h-16 w-44 shrink-0 border-4 border-bgDarkBlue bg-textBeige font-bowlby text-lg"
             variants={buttonVariants}
             initial="rest"
+            animate="visible"
             whileHover="hover"
           >
             ABOUT US
