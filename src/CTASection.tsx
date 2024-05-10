@@ -9,9 +9,14 @@ export const CTASection = () => {
         <h1 className="w-[895px] text-center text-7xl text-textBeige">
           ORDER ONLINE OR COME VISIT US TODAY
         </h1>
-        <button className="h-14 w-48 bg-accentLime text-black">
-          GET STARTED
-        </button>
+        <div className="flex gap-4 ">
+          <button className="h-14 w-48 bg-accentLime text-black">
+            ORDER ONLINE
+          </button>
+          <button className="h-14 w-48 border bg-transparent text-textBeige">
+            VIEW LOCATION
+          </button>
+        </div>
       </div>
       <img
         src="./src/assets/left-squiggly.svg"
