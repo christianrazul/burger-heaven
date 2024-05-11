@@ -1,21 +1,29 @@
-import { CTASection } from "./components/CTASection";
-import { Feedback } from "./components/Feedback";
-import { Footer } from "./components/Footer";
-import { Hero } from "./components/Hero";
-import { MenuPreview } from "./components/MenuPreview";
-import { Navbar } from "./components/Navbar";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { HomePage, AboutPage, MenuPage } from "./pages";
+import { Layout } from "./components/Layout";
+
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/about",
+        element: <AboutPage />,
+      },
+      {
+        path: "menu",
+        element: <MenuPage />,
+      },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <div className="flex w-full flex-col gap-8 overflow-hidden px-10 py-6 font-bowlby 2xl:px-[620px]">
-      <Navbar />
-      <Hero />
-      <MenuPreview />
-      <Feedback />
-      <CTASection />
-      <Footer />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
