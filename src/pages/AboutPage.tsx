@@ -108,12 +108,12 @@ const AdditionalInfo = () => {
       <div className="flex w-full gap-12 rounded-xl bg-accentLime px-20 py-16">
         <div className="flex w-1/2 flex-col justify-center">
           <motion.h2
-            className="mb-6 text-4xl tracking-wide"
+            className="mb-6 text-6xl tracking-wide"
             variants={textVariants}
             initial="hidden"
             animate="visible"
           >
-            Why we're Different
+            WHY WE'RE DIFFERENT
           </motion.h2>
           <motion.p
             className="font-inter text-lg font-medium"
@@ -154,12 +154,12 @@ const AdditionalInfo = () => {
         </motion.div>
         <div className="flex w-1/2 flex-col justify-center">
           <motion.h2
-            className="mb-6 text-4xl tracking-wide"
+            className="mb-6 text-6xl"
             variants={textVariants}
             initial="hidden"
             animate="visible"
           >
-            Our Commitment to Quality
+            WE COMMIT TO QUALITY
           </motion.h2>
           <motion.p
             className="font-inter text-lg font-medium"
