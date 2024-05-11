@@ -1,5 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One&family=Inter:wght@100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #1e1e1e;
+  background: #b3a0cd;
+}
+
+::selection {
+  color: #1e1e1e;
+  background: #b3a0cd;
+}
