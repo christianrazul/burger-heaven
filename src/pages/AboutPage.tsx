@@ -259,7 +259,7 @@ const CTA = () => {
         </motion.h1>
         <div className="mb-8 flex justify-center">
           <motion.p
-            className="w-2/3 text-center font-inter font-medium text-textBeige"
+            className="w-2/3 text-center font-inter text-lg font-medium text-textBeige"
             variants={textVariants}
             initial="hidden"
             animate="visible"
