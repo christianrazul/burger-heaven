@@ -38,7 +38,7 @@ export const MenuPreview = () => {
       <div
         className="flex h-[753px] w-1/2 items-end rounded-3xl border-4 border-textBeige bg-cover bg-center p-4"
         style={{
-          backgroundImage: "url('./src/assets/fries.webp')",
+          backgroundImage: "url('./assets/fries.webp')",
         }}
       >
         <motion.div
@@ -57,7 +57,7 @@ export const MenuPreview = () => {
       <div
         className="flex h-[753px] w-1/2 items-end rounded-3xl border-4 border-textBeige bg-cover bg-center p-4"
         style={{
-          backgroundImage: "url('./src/assets/chickensandwich.webp')",
+          backgroundImage: "url('./assets/chickensandwich.webp')",
         }}
       >
         <motion.div

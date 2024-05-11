@@ -67,7 +67,7 @@ export const CTASection = () => {
       viewport={{ once: true, amount: 0.5 }}
     >
       <img
-        src="./src/assets/right-squiggly.svg"
+        src="./assets/right-squiggly.svg"
         className="absolute -left-[520px] -top-28"
       />
       <div className="flex flex-col items-center gap-8">
@@ -101,7 +101,7 @@ export const CTASection = () => {
         </div>
       </div>
       <img
-        src="./src/assets/left-squiggly.svg"
+        src="./assets/left-squiggly.svg"
         className="absolute -bottom-16 -right-[520px] z-10"
       />
     </motion.section>

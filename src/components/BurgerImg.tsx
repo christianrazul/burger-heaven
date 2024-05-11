@@ -8,7 +8,7 @@ export const BurgerImg = ({ size, className }: BurgerImgProps) => {
     case "sm":
       return (
         <img
-          src="./src/assets/burgir.webp"
+          src="./assets/burgir.webp"
           alt="burgir"
           className={`h-[356px] w-[414px] ${className}`}
         />
@@ -16,7 +16,7 @@ export const BurgerImg = ({ size, className }: BurgerImgProps) => {
     case "md":
       return (
         <img
-          src="./src/assets/burgir.webp"
+          src="./assets/burgir.webp"
           alt="burgir"
           className={`${className}`}
         />

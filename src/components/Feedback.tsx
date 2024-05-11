@@ -54,7 +54,7 @@ export const Feedback = () => {
       <motion.div
         className="flex h-[503px] items-end rounded-3xl border-4 border-textBeige bg-cover bg-center p-4"
         style={{
-          backgroundImage: "url('./src/assets/people-eating.webp')",
+          backgroundImage: "url('./assets/people-eating.webp')",
         }}
         variants={menuVariants}
         initial="hidden"

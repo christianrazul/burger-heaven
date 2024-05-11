@@ -91,7 +91,7 @@ export const Hero = () => {
         initial="hidden"
         animate="visible"
       >
-        <img src="./src/assets/left-squiggly.svg" className="absolute left-0" />
+        <img src="./assets/left-squiggly.svg" className="absolute left-0" />
         <div className="relative -top-6 h-full w-4/5">
           <BurgerImg
             size={"sm"}
@@ -106,10 +106,7 @@ export const Hero = () => {
             className="absolute right-4 top-1/2 z-10 -translate-y-1/2 transform"
           />
         </div>
-        <img
-          src="./src/assets/right-squiggly.svg"
-          className="absolute right-0"
-        />
+        <img src="./assets/right-squiggly.svg" className="absolute right-0" />
       </motion.div>
       <div className="flex h-96 w-full rounded-xl border-4 border-bgDarkBlue bg-accentLime px-24 py-20">
         <motion.h1
