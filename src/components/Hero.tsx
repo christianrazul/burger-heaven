@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { BurgerImg } from "./BurgerImg";
+import { NavLink } from "react-router-dom";
 
 export const Hero = () => {
   const textVariants = {
@@ -134,7 +135,7 @@ export const Hero = () => {
             animate="visible"
             whileHover="hover"
           >
-            ABOUT US
+            <NavLink to="/about">ABOUT US</NavLink>
           </motion.button>
         </div>
       </div>

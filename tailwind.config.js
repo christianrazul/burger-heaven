@@ -20,6 +20,9 @@ export default {
     dropShadow: {
       boxy: "0.5rem 0.5rem black",
     },
+    screens: {
+      "3xl": "1600px",
+    },
   },
   plugins: [],
 };
